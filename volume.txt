@@ -1,0 +1,20 @@
+ 651  docker  volume   create   ashuvol 
+  652  docker  volume ls
+  653  docker  run -itd --name ok1 -p 9891:80  -v ashuvol:/var/www/html/    ashuoraclweb:vvv1 
+  657  docker  run -itd --name ok1 -p 9891:80  -v ashuvol:/var/www/html/    ashuoraclweb:vvv1 
+  659  docker  volume  ls
+  660  cd /var/lib/docker/
+  663  docker  volume  ls
+  664  docker  volume  inspect   ashuvol 
+  665  docker run  -it  --rm  -v  ashuvol:/mydata  alpine  
+  666  docker run  -it  --rm  -v  ashuvol:/mydata  oraclelinux  bash 
+  670  docker run  -it  --rm  -v  ashuvol:/mydata  oraclelinux  bash 
+  671  docker  run -itd --name ok2 -p 9899:80  -v ashuvol:/var/www/html/    ashuoraclweb:vvv1 
+  679  docker  run -itd --name ok4 -p 8888:80  -v /home/ec2-user/day2/multiappdockerimage/webapp2/:/var/www/html/    ashuoraclweb:vvv1 
+  680  docker  run -itd --name ok5 -p 8881:80  -v /home/ec2-user/day2/multiappdockerimage/webapp1/:/var/www/html/    ashuoraclweb:vvv1 
+  695  docker  run  -itd --name ok9  -v  /home/ec2-user/nice:/usr/share/nginx/html  -p 9899:80 nginx 
+  696  docker  run  -itd   -v  /home/ec2-user/nice:/usr/share/nginx/html  -p 1131:80 nginx 
+  704  docker  run  -itd   -v  /home/ec2-user/nice:/usr/share/nginx/html:ro             -v  ashuvol:/logs   -p 1134:80 nginx 
+  706  ls  -l  /var/run/docker.sock  
+  708  docker  run -itd --name  webui  -p 9000:9000 -v  /var/run/docker.sock:/var/run/docker.sock   portainer/portainer
+

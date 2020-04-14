@@ -1,0 +1,7 @@
+  651  docker  volume   create   ashuvol 
+  652  docker  volume ls
+  659  docker  volume  ls
+  663  docker  volume  ls
+  664  docker  volume  inspect   ashuvol 
+  736  history   |   grep -i  volume
+  737  history   |   grep -i  volume  >>/tmp/oracle13042020/dockervolume.txt
