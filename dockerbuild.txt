@@ -1,0 +1,7 @@
+ 372  docker  build   -t   ashuwebapp:v1  . 
+  373  docker  build   -t   ashuwebapp:v1  -f  ashu.dockerfile     . 
+  412  docker  build   -t   ashuwebapp:bestpr  -f  ashu.dockerfile     . 
+  415  docker  build   -t   ashuwebapp:bestpr  -f  ashu.dockerfile     . 
+  506  docker  build  -t  ashuoraclweb:vvv1  .
+  526  docker  build   -t   aaa     https://github.com/redashu/oracle13042020.git
+

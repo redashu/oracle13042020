@@ -1,0 +1,59 @@
+  591  docker  network   ls
+  592  ifconfig docker0
+  593  docker  network  inspect   4c28041239d4
+  594  history 
+  595  docker  network   ls
+  596  docker  network  inspect   4c28041239d4
+  597  docker  network  create  ashubr  --subnet  172.23.0.0/16 
+  598  docker  network  ls
+  599  ifconfig 
+  600  docker  network  ls
+  601  docker  ps
+  602  docker  run  -itd  --name  ashubrc1  alpine  ping google.com 
+  603  docker  ps
+  604  docker  run  -itd  --name  ashubrc2  --network ashubr   alpine  ping google.com 
+  605  docker  ps
+  606  docker  inspect ashubrc2  
+  607  history 
+  608  docker  exec  -it  ashubrc2  sh 
+  609  docker  run  -itd  --name  ashubrc3  --network ashubr   alpine  ping google.com 
+  610  docker  network  ls
+  611  docker  network  inspect ashubr 
+  612* 
+  613  docker  network  inspect ashubr 
+  614  history 
+  615  docker  exec -it  ashubrc2
+  616  docker  exec -it  ashubrc2  sh
+  617  history 
+  618  docker  run -itd  --name  ashubrc4  --network  ashubr  --ip 172.23.0.100 alpine 
+  619  docker  network  inspect ashubr 
+  620  history 
+  621  docker  network   create   ashubr2 
+  622  docker  network  ls
+  623  history 
+  624  docker  ps
+  625  history 
+  626  docker network  ls
+  627  docker  network rm   ashubr2
+  628  docker  network rm   ashubr1
+  629  docker  network rm   ashubr
+  630  docker kill  $(docker ps -q)
+  631  docker rm   $(docker ps -q)
+  632  docker rm   $(docker ps -qa)
+  633  docker  network  ls
+  634  docker  network  ls   -q
+  635  docker netwrk  rm  $(docker  network  ls   -q)
+  636  docker network  rm  $(docker  network  ls   -q)
+  637  docker  network ls
+  638  history 
+  639  docker  network ls
+  640  docker  run -it --rm  --network none alpine  sh 
+  641  docker  run -it --rm  --network host  alpine  sh 
+  642  history 
+  643  docker  images  |   grep -i ashu
+  644  docker  run -itd --name ok -p 9890:80  ashuoraclweb:vvv1 
+  645  docker  exec -it  ok  bash 
+  646  docker  kill ok
+  647  docker  rm  ok
+  648  docker  run -itd --name ok -p 9890:80  ashuoraclweb:vvv1 
+
