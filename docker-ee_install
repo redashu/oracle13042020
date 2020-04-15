@@ -1,0 +1,15 @@
+  
+    7  export DOCKERURL="YOur Docker ENterpise License URL"
+    8  sudo -E sh -c 'echo "$DOCKERURL/oraclelinux" > /etc/yum/vars/dockerurl'
+    9  sudo yum install -y yum-utils   device-mapper-persistent-data   lvm2
+   10  kill -9 956
+   11  sudo yum install -y yum-utils   device-mapper-persistent-data   lvm2
+   12  cp  /*.repo  .
+   13  ls
+   14  sudo yum install -y yum-utils   device-mapper-persistent-data   lvm2
+   15  sudo yum-config-manager --enable ol7_addons
+   16  sudo -E yum-config-manager     --add-repo     "$DOCKERURL/oraclelinux/docker-ee.repo"
+   17  ls
+   18  sudo yum -y install docker-ee docker-ee-cli containerd.io
+   19  cd
+   20  systemctl  start  docker
