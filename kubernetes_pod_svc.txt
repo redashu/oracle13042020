@@ -1,0 +1,54 @@
+  865  kubectl get  nodes
+  867  kubectl   create  -f  ashupod1.yml 
+  868  kubectl get pods
+  869  kubectl delelet all --all
+  870  kubectl delete all --all
+  871  kubectl get pods
+  872  kubectl create  -f ashupod1.yml 
+  873  kubectl get pods
+  876  kubectl create  -f  ashupod1.yml 
+  877  kubectl delete pods  ashupod1
+  878  kubectl create  -f  ashupod1.yml 
+  879  kubectl get pods
+  882  kubectl  get pods
+  883  kubectl  get nodes
+  884  kubectl  get  pods  -o wide
+  885  kubectl get nodes
+  886  kubectl  get  pods ashupod1   -o wide
+  887  kubectl get nodes
+  888  kubectl delete pods  ashupod1
+  889  kubectl get pods
+  890  kubectl  delete pods ashupod111 
+  892  kubectl  create -f  ashupod1.yml 
+  893  kubectl get pods
+  894  kubectl get po  
+  895  kubectl describe  pods  ashupod1 
+  896  kubectl describe  pods  ashupod1  |  less
+  898  kubectl  logs  ashpod1
+  899  kubectl  logs  ashupod1
+  900  kubectl  logs  -f  ashupod1
+  904  kubectl  explain  pods |  less
+  905  kubectl  explain  pods.apiVersion |  less
+  906  kubectl  explain  pods.spec |  less
+  909  kubectl  run ashupod3 --image=alpine  --restart=Never --command ping fb.com     --dry-run  -o  yaml 
+  910  kubectl  run ashupod3 --image=alpine  --restart=Never --command ping fb.com     --dry-run  -o  yaml   >ashupod3.yaml
+  914  kubectl  create -f  ashupod3.yaml 
+  915  kubectl get po 
+  924  history   |  grep -i kubectl 
+  925  history   |  grep -i kubectl  >podsday3.txt 
+  938  git commit -m "kubectl pods"
+  943  git commit -m "kubectl pods "  .
+  950  kubectl 
+  951  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+  953  sudo mv  kubectl  /usr/bin/
+  954  sudo chmod  +x  /usr/bin/kubectl 
+  955  kubectl  
+  957  kubectl  -v
+  958  kubectl  -version
+  959  kubectl  version
+  967  kubectl   get  nodes  --kubeconfig  admin.conf 
+  969  kubectl  get  nodes  --kubeconfig  admin.conf 
+  976  kubectl get  nodes
+  978  kubectl  get  nodes
+ 1008  history   |  grep -i kubectl
+ 1009  history   |  grep -i kubectl  >oracle13042020/kubernetes_pod_svc.txt

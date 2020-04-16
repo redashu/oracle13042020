@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:               #optional as of now for service 
+    app: ashusvc1
+  name: ashusvc1    #name of service
+spec:
+  ports:
+  - name: "80"   # name of port you can give any string
+    port: 80      #  service port number  u can't ignore 
+    protocol: TCP  # protocol to access type
+    targetPort: 80   # port of application  as expose in Dockerfile  (optional)
+  selector:                   #  which pod it is goign to select
+   run: ashupod1   #  label must be same as pod lables
+  type: NodePort
+status:
+  loadBalancer: {}
