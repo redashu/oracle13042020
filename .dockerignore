@@ -7,4 +7,6 @@ LICENSE
 *.yml
 *.sh
 *.json
+*.txt
+*.text
 
