@@ -5,7 +5,6 @@ Dockerfile
 LICENSE
 *.yaml
 *.yml
-*.sh
 *.json
 *.txt
 *.text
