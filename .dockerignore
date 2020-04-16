@@ -3,3 +3,8 @@ Dockerfile
 .dockerignore
 .git
 LICENSE
+*.yaml
+*.yml
+*.sh
+*.json
+
